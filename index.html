@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travelo</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="./src/output.css" rel="stylesheet">
+</head>
+
+<body class="container mx-auto">
+  <!----navbar-->
+  <nav class="container flex bg-gray-400 sticky">
+    <div class="h-10 w-20 overflow-hidden"><img class="h-full w-full object-contain" src="./img/logo.png" alt=""></div>
+    <div class="items-start mr-10 justify-around">
+      <ul class="flex ">
+        <li><a class=" " href="">Home</a></li>
+        <li><a class="" href="">About</a></li>
+        <li><a class="" href="">Destnations</a></li>
+        <li> <select id="myDropdown">
+            <option value="option1">Page</option>
+            <option value="option1">Destnations details</option>
+            <option value="option2">Elements</option>
+          </select></li>
+        <li><select id="myDropdown">
+            <option value="option1">Blog</option>
+            <option value="option1">Single-blog</option>
+          </select></li>
+        <li><a class="" href="">Contact</a></li>
+      </ul>
+    </div>
+    <div class="container flex items-center  justify-end gap-5">
+      <div><i class="fa-solid fa-phone text-red-500"></i><span>+919600517409</span></div>
+      <span>|</span>
+      <div class="items-center justify-center"><i class="fa-brands fa-instagram hover:text-red-500"></i>
+        <i class="fa-brands fa-linkedin-in hover:text-red-500 "></i>
+        <i class="fa-brands fa-square-facebook hover:text-red-500"></i>
+        <i class="fa-brands fa-google-plus-g hover:text-red-500"></i>
+        <span class="bg-red-500"> <i class="fa-solid fa-magnifying-glass text-white"></i></span>
+      </div>
+    </div>
+  </nav>
+  <!---hero-->
+  <div class="slider container ">
+    <figure>
+      <div class="slide ">
+        <h1>indonesia</h1>
+        <h5>pixel perfect Design with awesome contents</h5>
+        <button class="btn" type="button">Explore Now</button>
+        <img src="./img/banner.png" alt="">
+      </div>
+      <div class="slide">
+        <h1>Australia</h1>
+        <h5>pixel perfect Design with awesome contents</h5>
+        <button class="btn" type="button">Explore Now</button>
+        <img src="./img/banner2.png" alt="">
+      </div>
+      <div class="slide">
+        <h1>Switzerland</h1>
+        <h5>pixel perfect Design with awesome contents</h5>
+        <button class="btn" type="button">Explore Now</button>
+        <img src="./img/banner3.png" alt="">
+      </div>
+    </figure>
+  </div>
+  <div class="where-to  flex text-white bg-black">
+    <div class="container te">
+      <div class="flex align-items-center">
+        <div class="">
+          <div class="from-area font-bold text-white">
+            <h3>Where you want to go?</h3>
+          </div>
+        </div>
+        <div class="flex">
+          <div class="search_wrap flex ">
+            <form class="search_form " action="#">
+              <ul>
+                <span class="flex">
+                  <li class="input_field flex"><input type="text" placeholder="Where to go?"></li>
+                </span>
+                <span class="flex">
+                  <li class="date"><input type="date" placeholder="Date"></li>
+                </span>
+                <span class="flex">
+                  <li class="Travel flex"><input type=""><select id="myDropdown">
+                      <option value="option1">Travel type</option>
+                      <option value="option1">Some option </option>
+                      <option value="option1">Another option </option>
+                    </select></li>
+                </span>
+                <button class="btn-2 h-10 w-20 bg-red-500 flex" type="button">Submit</button>
+              </ul>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="titel">
+      <h3>Popular Destnations</h3>
+      <p>Suffered alteration in some form, by injected humour or good day randomised booth anim 8-bit hella wolf moon
+        beard words.</p>
+    </div>
+  </div>
+  <div class="grid grid-cols-3 gap-4 ">
+    <div class="p-4">
+      <div><img src="./img/single.png" alt=""></div>
+      <div class="content">
+        <p class="flex items-center">Italy <a class="bg-button items-center" href="">07 Places</a></p>
+      </div>
+    </div>
+    <div class="p-4">
+      <div><img src="./img/2.png" alt=""></div>
+      <div class="content">
+        <p class="flex items-center">Brazil <a class="bg-button items-center" href="">03 Places</a></p>
+      </div>
+    </div>
+    <div class="p-4">
+      <div><img src="./img/3.png" alt=""></div>
+      <div class="content">
+        <p class="flex items-center">America <a class="bg-button items-center" href="">10 Places</a></p>
+      </div>
+    </div>
+    <div class="p-4">
+      <div><img src="./img/4.png" alt=""></div>
+      <div class="content">
+        <p class="flex items-center">Nepal <a class="bg-button items-center" href="">02 Places</a></p>
+      </div>
+    </div>
+    <div class="p-4">
+      <div><img src="./img/5.png" alt=""></div>
+      <div class="content">
+        <p class="flex items-center">Maldives <a class="bg-button items-center" href="">02 Places</a></p>
+      </div>
+    </div>
+    <div class="p-4">
+      <div><img src="./img/6.png" alt=""></div>
+      <div class="content">
+        <p class="flex items-center">indonesia <a class="bg-button items-center" href="">05 Places</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="Subscrib py-10">
+    <div class="container">
+      <div class="row justify-center items-center flex">
+        <div>
+          <h4>Subscribe Our Newsletter</h4>
+          <p>Subscribe newsletter to get offers and about new places to discover.</p>
+        </div>
+        <div class="flex"><input type="email" name="" placeholder="Your mail"></div>
+        <div class="flex"><button class="btn-3 bg-red-500 text-white " type="submit">Subscribe</button></div>
+      </div>
+    </div>
+  </div>
+  <div class="container justify-center items-center mb-10">
+    <div class="titel">
+      <h3>Popular places</h3>
+      <p>Suffered alteration in some form, by injected humour or good day randomised booth anim 8-bit hella wolf moon
+        beard words.</p>
+    </div>
+  </div>
+  <div class="bg-gray-100">
+    <div class="container mx-auto py-10">
+
+      <!-- Grid Layout -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+
+        <!-- Card 1 -->
+        <div class="bg-white p-6  rounded-lg shadow-lg">
+          <img src="./img/clifornia.png" alt="Card 1" class="w-full h-48 object-cover rounded-t-lg mb-4">
+          <h3 class="text-xl font-semibold mb-2 hover:text-red-500">California</h3>
+          <p class="text-gray-700">United State of America</p>
+          <button class="mt-4 px-4 py-2 bg-red-500 text-white rounded-lg hover-button">$700</button>
+        </div>
+        <!-- Card 2 -->
+        <div class="bg-white p-6  rounded-lg shadow-lg">
+          <img src="./img/clifornia.png" alt="Card 1" class="w-full h-48 object-cover rounded-t-lg mb-4">
+          <h3 class="text-xl font-semibold mb-2 hover:text-red-500">California</h3>
+          <p class="text-gray-700">United State of America</p>
+          <button class="mt-4 px-4 py-2 bg-red-500 text-white rounded-lg hover-button">$700</button>
+        </div>
+        <!-- Card 3 -->
+        <div class="bg-white p-6  rounded-lg shadow-lg">
+          <img src="./img/clifornia.png" alt="Card 1" class="w-full h-48 object-cover rounded-t-lg mb-4">
+          <h3 class="text-xl font-semibold mb-2 hover:text-red-500">California</h3>
+          <p class="text-gray-700">United State of America</p>
+          <button class="mt-4 px-4 py-2 bg-red-500 text-white rounded-lg hover-button">$700</button>
+        </div>
+        <!-- Card 4 -->
+        <div class="bg-white p-6  rounded-lg shadow-lg">
+          <img src="./img/clifornia.png" alt="Card 1" class="w-full h-48 object-cover rounded-t-lg mb-4">
+          <h3 class="text-xl font-semibold mb-2 hover:text-red-500">California</h3>
+          <p class="text-gray-700">United State of America</p>
+          <button class="mt-4 px-4 py-2 bg-red-500 text-white rounded-lg hover-button">$700</button>
+        </div>
+        <!-- Card 5 -->
+        <div class="bg-white p-6  rounded-lg shadow-lg">
+          <img src="./img/clifornia.png" alt="Card 1" class="w-full h-48 object-cover rounded-t-lg mb-4">
+          <h3 class="text-xl font-semibold mb-2 hover:text-red-500">California</h3>
+          <p class="text-gray-700">United State of America</p>
+          <button class="mt-4 px-4 py-2 bg-red-500 text-white rounded-lg hover-button">$700</button>
+        </div>
+        <!-- Card 6 -->
+        <div class="bg-white p-6  rounded-lg shadow-lg">
+          <img src="./img/clifornia.png" alt="Card 1" class="w-full h-48 object-cover rounded-t-lg mb-4">
+          <h3 class="text-xl font-semibold mb-2 hover:text-red-500">California</h3>
+          <p class="text-gray-700">United State of America</p>
+          <button class="mt-4 px-4 py-2 bg-red-500 text-white rounded-lg hover-button">$700</button>
+        </div>
+      </div>
+    </div>
+  </div>
+ <div class=""><button class="btn-4 bg-red-500" type="button">Explore Now</button></div>
+
+
+</body>
+
+</html>
