@@ -14,34 +14,45 @@
 
 <body class="container mx-auto">
   <!----navbar-->
-  <nav class="container flex bg-gray-400 sticky">
-    <div class="h-10 w-20 overflow-hidden"><img class="h-full w-full object-contain" src="./img/logo.png" alt=""></div>
-    <div class="items-start mr-10 justify-around">
-      <ul class="flex ">
-        <li><a class=" " href="">Home</a></li>
-        <li><a class="" href="">About</a></li>
-        <li><a class="" href="">Destnations</a></li>
-        <li> <select id="myDropdown">
-            <option value="option1">Page</option>
-            <option value="option1">Destnations details</option>
-            <option value="option2">Elements</option>
-          </select></li>
-        <li><select id="myDropdown">
-            <option value="option1">Blog</option>
-            <option value="option1">Single-blog</option>
-          </select></li>
-        <li><a class="" href="">Contact</a></li>
+  <nav class="container flex  sticky z-50 items-center ">
+    <div class="h-10 w-40"><img class="h-full w-full object-contain " src="./img/logo.png" alt=""></div>
+    <div class="ms-10 ">
+      <ul class="lg:flex gap-4  hidden mt-1.5 ">
+        <li><a class="hover:text-green-500 " href="">Home</a></li>
+        <li><a class="hover:text-green-500" href="">About</a></li>
+        <li><a class="hover:text-green-500" href="">Destnations</a></li>
+        <li class="relative group ">
+          <div class="hover:text-green-500">Page</div>
+          <div class="absolute  top-[100%] left-0 pt-5 opacity-0 duration-500 group-hover:opacity-100 translate-y-[-10%] group-hover:translate-y-[0] ">
+            <div class="outline-none bg-white ">
+              <option class="hover:text-green-500">Elements</option>
+              <option class="hover:text-green-500">Destnations details</option>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="hover:text-green-500">Blog</div>
+          <div class="absolute  top-[100%] left-0 pt-5 opacity-0 duration-500 group-hover:opacity-100 translate-y-[-10%] group-hover:translate-y-[0] ">
+            <div class="outline-none bg-white ">
+              <option class="hover:text-green-500">Blog</option>
+              <option class="hover:text-green-500">Single-Blog</option>
+            </div>
+          </div>
+        </li>
+        <li><a class="hover:text-green-500" href="">Contact</a></li>
       </ul>
     </div>
-    <div class="container flex items-center  justify-end gap-5">
+    <div class="container flex justify-end items-center gap-2 ">
       <div><i class="fa-solid fa-phone text-red-500"></i><span>+919600517409</span></div>
       <span>|</span>
-      <div class="items-center justify-center"><i class="fa-brands fa-instagram hover:text-red-500"></i>
-        <i class="fa-brands fa-linkedin-in hover:text-red-500 "></i>
-        <i class="fa-brands fa-square-facebook hover:text-red-500"></i>
-        <i class="fa-brands fa-google-plus-g hover:text-red-500"></i>
-        <span class="bg-red-500"> <i class="fa-solid fa-magnifying-glass text-white"></i></span>
+      <div class="flex gap-2 items-center">
+        <div class=""><i class="fa-brands fa-instagram hover:text-red-500"></i></div>
+        <div><i class="fa-brands fa-linkedin-in hover:text-red-500 "></i></div>
+        <div><i class="fa-brands fa-square-facebook hover:text-red-500"></i></div>
+        <div><i class="fa-brands fa-google-plus-g hover:text-red-500"></i></div>
+        <div class="bg-red-600 text-white p-5"> <i class="fa-solid fa-magnifying-glass"></i></div>
       </div>
+    </div>
     </div>
   </nav>
   <!---hero-->
@@ -67,32 +78,32 @@
       </div>
     </figure>
   </div>
-  <div class="where-to  flex text-white bg-black">
+  <div class="where-to  flex p-10 gap-5 text-white bg-black">
     <div class="container te">
       <div class="flex align-items-center">
         <div class="">
-          <div class="from-area font-bold text-white">
+          <div class="from-area font-bold text-white pr-3 ">
             <h3>Where you want to go?</h3>
           </div>
         </div>
-        <div class="flex">
+        <div class="flex grid-rows-3">
           <div class="search_wrap flex ">
             <form class="search_form " action="#">
               <ul>
                 <span class="flex">
-                  <li class="input_field flex"><input type="text" placeholder="Where to go?"></li>
+                  <li class="input_field flex border"><input type="text" placeholder="Where to go?"></li>
                 </span>
-                <span class="flex">
-                  <li class="date"><input type="date" placeholder="Date"></li>
-                </span>
-                <span class="flex">
-                  <li class="Travel flex"><input type=""><select id="myDropdown">
-                      <option value="option1">Travel type</option>
-                      <option value="option1">Some option </option>
-                      <option value="option1">Another option </option>
-                    </select></li>
-                </span>
-                <button class="btn-2 h-10 w-20 bg-red-500 flex" type="button">Submit</button>
+                <div class="flex">
+                  <li class="date border gap-2"><input type="date" placeholder="Date"></li>
+                  </div>
+                  <span class="flex">
+                    <li class="Travel flex"><input type=""><select id="myDropdown">
+                        <option value="option1">Travel type</option>
+                        <option value="option1">Some option </option>
+                        <option value="option1">Another option </option>
+                      </select></li>
+                  </span>
+                  <button class="btn-2 h-10 w-20 bg-red-500 flex" type="button">Submit</button>
               </ul>
             </form>
           </div>
@@ -216,9 +227,7 @@
       </div>
     </div>
   </div>
- <div class=""><button class="btn-4 bg-red-500" type="button">Explore Now</button></div>
-
-
+  <div class=""><button class="btn-4 bg-red-500" type="button">Explore Now</button></div>
 </body>
 
 </html>
